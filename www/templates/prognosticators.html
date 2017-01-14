@@ -1,0 +1,21 @@
+<ion-view view-title="Pronostics">
+    
+    <ion-content class="has-header">
+        <div class="item-input-inset">
+        <label class="item-input-wrapper">
+            <input type="text" placeholder="New Todo" ng-model="input.name">
+        </label>
+        <button class="button button-balanced button-small" ng-click="addTodo()">
+            Add Todo
+        </button>
+        </div>
+        <ion-list can-swipe="true">
+            <ion-item ng-repeat="item in todos" class="item-button-right">
+                {{item.name}}
+                <button class=" button button-assertive button-small" ng-click="deleteTodo(item.id)">
+                    Delete
+                </button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

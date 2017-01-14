@@ -1,0 +1,154 @@
+/* Empty. Add your own CSS if you like */
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/Roboto/Roboto-light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-thin;
+    src: url(fonts/Roboto/Roboto-Thin.ttf);
+}
+
+body{
+    font-family:  'Roboto-light', 'helvetica', sans-serif;
+    letter-spacing:1px;
+}
+
+.calendrier .match-info{
+    font: 60%;
+}
+.item-note{
+    font : 12px;
+}
+
+.match-info.left{
+    text-align: left;
+    font-size: 89%;
+}
+
+.match-info.right{
+    text-align: right;
+    font-size: 89%;
+}
+
+.match-info.center{
+    text-align: center;
+    min-width: 50px;
+    font-size: 1.1em;
+}
+
+.match-info{
+    text-align: center;
+}
+
+.row .calendrier{
+    padding: 2px;
+}
+
+.card .item{
+    padding: 5px;
+}
+
+.calendrier .col{
+    padding: 0;
+}
+
+.spinner svg {
+  width: 50px;
+  height: 50px;
+  stroke: #FFC900;
+  fill: #FFF;
+}
+
+.card .item.pouleA{
+    background-color: #387EF5
+}
+
+.card .item.pouleB{
+    background-color: #FFC900
+}
+
+.card .item.pouleC{
+    background-color: #33CD5F
+}
+
+.card .item.pouleD{
+    background-color: #EF473A
+}
+
+.item.item-divider .badge {
+    top: 4px;
+}
+
+.card .item-divider{
+    color: #FFF;
+    background: #444444;
+}
+
+.team .item{
+    padding:0;
+    font-size : 14px;
+}
+
+.team .col{
+    padding:0;
+}
+
+.team .item-divider, .team .item-divider .col-40{
+    color: #FFF;
+    font-weight: bold;
+    font-size:12px;
+}
+
+.team .col-40{
+    /*color: #33CD5F;*/
+    font-weight: bold;
+}
+
+.spinner-balanced{
+    position : relative;
+    top: 45%;
+    z-index:200;
+}
+
+.spinner-content{
+    width: 100%;
+    height : 100%;
+    background :rgba(68,68,68,.5);
+    text-align: center;
+}
+
+.team-name{
+    font-size: 90%;
+    /*font-weight: bold;*/
+}
+
+.list{
+    background : #ddd;
+}
+
+.tabs{
+    height: 60px;
+}
+.tab-title{
+    font-size: 13px;
+}
+
+.tabs-striped.tabs-color-balanced .tab-item.tab-item-active, 
+.tabs-striped.tabs-color-balanced .tab-item.active, 
+.tabs-striped.tabs-color-balanced .tab-item.activated{
+    border-top-width: 4px;
+}
+
+.tabs .tab-item .icon {
+    display: block;
+    margin: 2px auto;
+    height: 32px;
+    font-size: 32px;
+}
+
+.bar .title.title-left{
+    text-align: center;
+}
+

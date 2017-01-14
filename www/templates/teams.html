@@ -1,0 +1,309 @@
+<ion-view view-title="Classements" name="dashboard-view">
+
+  <ion-nav-buttons side="right">
+    <button class="button button-balanced" ng-click="doRefresh()"><i class="icon ion-refresh"></i></button>
+  </ion-nav-buttons>
+
+  
+  <ion-content class="team poule">
+
+      <div class="spinner-content" ng-show="loader"><ion-spinner class="spinner-balanced" icon="spiral"></ion-spinner></div>
+      <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+      <ion-list>
+        <div class="item item-divider item-positive">
+          <div class="row">
+              <div class="col col-40">
+                POULE A
+              </div>
+              <div class="col col-60">
+                <div class="row">
+                  <div class="col">
+                    J
+                  </div>
+                  <div class="col">
+                    G
+                  </div>
+                  <div class="col">
+                    N
+                  </div>
+                  <div class="col">
+                    P
+                  </div>
+                  <div class="col">
+                    BP
+                  </div>
+                  <div class="col">
+                    BC
+                  </div>
+                  <div class="col">
+                    DB
+                  </div>
+                  <div class="col">
+                    PT
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="item" ng-repeat ="team in filteredTeamsA | orderBy:['-points','-goalDiff','-goalFor']">
+          <div class="row">
+            <div class="col col-40">
+                {{team.name}}
+              </div>
+              <div class="col col-60">
+                <div class="row">
+                  <div class="col">
+                    {{team.matchPlayed}}
+                  </div>
+                  <div class="col">
+                    {{team.matchWin}}
+                  </div>
+                  <div class="col">
+                    {{team.matchNull}}
+                  </div>
+                  <div class="col">
+                    {{team.matchLost}}
+                  </div>
+                  <div class="col">
+                    {{team.goalFor}}
+                  </div>
+                  <div class="col">
+                    {{team.goalAgainst}}
+                  </div>
+                  <div class="col">
+                    {{team.goalDiff}}
+                  </div>
+                  <div class="col">
+                    <b>{{team.points}}</b>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="padding"></div><div class="padding"></div>
+
+        <!--Poule B -->
+        <div class="item item-divider item-energized">
+          <div class="row">
+              <div class="col col-40">
+                POULE B
+              </div>
+              <div class="col col-60">
+                <div class="row">
+                  <div class="col">
+                    J
+                  </div>
+                  <div class="col">
+                    G
+                  </div>
+                  <div class="col">
+                    N
+                  </div>
+                  <div class="col">
+                    P
+                  </div>
+                  <div class="col">
+                    BP
+                  </div>
+                  <div class="col">
+                    BC
+                  </div>
+                  <div class="col">
+                    DB
+                  </div>
+                  <div class="col">
+                    PT
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="item" ng-repeat ="team in filteredTeamsB | orderBy:['-points','-goalDiff','-goalFor']">
+          <div class="row">
+              <div class="col col-40">
+                {{team.name}}
+              </div>
+              <div class="col col-60">
+                <div class="row">
+                  <div class="col">
+                    {{team.matchPlayed}}
+                  </div>
+                  <div class="col">
+                    {{team.matchWin}}
+                  </div>
+                  <div class="col">
+                    {{team.matchNull}}
+                  </div>
+                  <div class="col">
+                    {{team.matchLost}}
+                  </div>
+                  <div class="col">
+                    {{team.goalFor}}
+                  </div>
+                  <div class="col">
+                    {{team.goalAgainst}}
+                  </div>
+                  <div class="col">
+                    {{team.goalDiff}}
+                  </div>
+                  <div class="col">
+                    <b>{{team.points}}</b>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="padding"></div><div class="padding"></div>
+      
+        <!--Poule C -->
+        <div class="item item-divider item-balanced">
+          <div class="row">
+              <div class="col col-40">
+                POULE C
+              </div>
+              <div class="col col-60">
+                <div class="row">
+                  <div class="col">
+                    J
+                  </div>
+                  <div class="col">
+                    G
+                  </div>
+                  <div class="col">
+                    N
+                  </div>
+                  <div class="col">
+                    P
+                  </div>
+                  <div class="col">
+                    BP
+                  </div>
+                  <div class="col">
+                    BC
+                  </div>
+                  <div class="col">
+                    DB
+                  </div>
+                  <div class="col">
+                    PT
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="item" ng-repeat ="team in filteredTeamsC | orderBy:['-points','-goalDiff','-goalFor']">
+          <div class="row">
+              <div class="col col-40">
+                {{team.name}}
+              </div>
+              <div class="col col-60">
+                <div class="row">
+                  <div class="col">
+                    {{team.matchPlayed}}
+                  </div>
+                  <div class="col">
+                    {{team.matchWin}}
+                  </div>
+                  <div class="col">
+                    {{team.matchNull}}
+                  </div>
+                  <div class="col">
+                    {{team.matchLost}}
+                  </div>
+                  <div class="col">
+                    {{team.goalFor}}
+                  </div>
+                  <div class="col">
+                    {{team.goalAgainst}}
+                  </div>
+                  <div class="col">
+                    {{team.goalDiff}}
+                  </div>
+                  <div class="col">
+                    <b>{{team.points}}</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="padding"></div><div class="padding"></div>
+
+
+        <!--Poule D -->
+        <div class="item item-divider item-assertive">
+          <div class="row">
+              <div class="col col-40">
+                POULE D
+              </div>
+              <div class="col col-60">
+                <div class="row">
+                  <div class="col">
+                    J
+                  </div>
+                  <div class="col">
+                    G
+                  </div>
+                  <div class="col">
+                    N
+                  </div>
+                  <div class="col">
+                    P
+                  </div>
+                  <div class="col">
+                    BP
+                  </div>
+                  <div class="col">
+                    BC
+                  </div>
+                  <div class="col">
+                    DB
+                  </div>
+                  <div class="col">
+                    PT
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="item" ng-repeat ="team in filteredTeamsD | orderBy:['-points','-goalDiff','-goalFor']">
+          <div class="row">
+              <div class="col col-40">
+                {{team.name}}
+              </div>
+              <div class="col col-60">
+                <div class="row">
+                  <div class="col">
+                    {{team.matchPlayed}}
+                  </div>
+                  <div class="col">
+                    {{team.matchWin}}
+                  </div>
+                  <div class="col">
+                    {{team.matchNull}}
+                  </div>
+                  <div class="col">
+                    {{team.matchLost}}
+                  </div>
+                  <div class="col">
+                    {{team.goalFor}}
+                  </div>
+                  <div class="col">
+                    {{team.goalAgainst}}
+                  </div>
+                  <div class="col">
+                    {{team.goalDiff}}
+                  </div>
+                  <div class="col">
+                    <b>{{team.points}}</b>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="padding"></div>
+        <!--/ion-slide-page>
+        </ion-slides>-->
+      </ion-list>
+  </ion-content>
+</ion-view>

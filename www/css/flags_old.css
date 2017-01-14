@@ -1,0 +1,90 @@
+/*!
+ * Generated with CSS Flag Sprite generator (https://www.flag-sprites.com/)
+ */
+
+.flag {
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    background: url('../img/flags.png') no-repeat;
+}
+
+/* ci: drapeau cote divoire */
+.flag.flag-9 {
+    background-position: -36px 0;
+}
+
+/* ga: drapeau gabon */
+.flag.flag-3 {
+    background-position: -36px -12px;
+}
+
+/* ml : mali */
+.flag.flag-15 {
+    background-position: -36px -24px;
+}
+
+/* cd : congo */
+.flag.flag-11 {
+    background-position: -18px 0;
+}
+
+/* eg : egypte */
+.flag.flag-13 {
+    background-position: -18px -12px;
+}
+
+/* tg : togo */
+.flag.flag-12 {
+    background-position: 0 -36px;
+}
+
+/* bf : burkina */
+.flag.flag-2 {
+    background-position: 0 0;
+}
+
+/* gh : ghana */
+.flag.flag-14 {
+    background-position: -54px -12px;
+}
+
+/* ma : maroc */
+.flag.flag-10 {
+    background-position: -18px -24px;
+}
+
+/* sn : senegal */
+.flag.flag-6 {
+    background-position: -54px -24px;
+}
+
+/* ug : uganda */
+.flag.flag-16 {
+    background-position: -36px -36px;
+}
+
+/* tn : tunisie */
+.flag.flag-7 {
+    background-position: -18px -36px;
+}
+
+/* zw : zimbabwe */
+.flag.flag-8 {
+    background-position: -54px -36px;
+}
+
+/* cm : cameroun */
+.flag.flag-1 {
+    background-position: -54px 0;
+}
+
+/* gw : guinee bissau */
+.flag.flag-4 {
+    background-position: 0 -24px;
+}
+
+/* dz : algerie */
+.flag.flag-5 {
+    background-position: 0 -12px;
+}

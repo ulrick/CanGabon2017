@@ -1,0 +1,75 @@
+/*!
+ * Generated with CSS Flag Sprite generator (https://www.flag-sprites.com/)
+ */
+
+.flag {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('../img/flags.png') no-repeat;
+}
+
+
+.flag.flag-ga {
+    background-position: -64px -32px;
+}
+
+.flag.flag-eg {
+    background-position: -32px -32px;
+}
+
+.flag.flag-cm {
+    background-position: -96px 0;
+}
+
+.flag.flag-sn {
+    background-position: -96px -64px;
+}
+
+.flag.flag-ug {
+    background-position: -64px -96px;
+}
+
+.flag.flag-zw {
+    background-position: -96px -96px;
+}
+
+.flag.flag-bf {
+    background-position: 0 0;
+}
+
+.flag.flag-cd {
+    background-position: -32px 0;
+}
+
+.flag.flag-ci {
+    background-position: -64px 0;
+}
+
+.flag.flag-dz {
+    background-position: 0 -32px;
+}
+
+.flag.flag-ma {
+    background-position: -32px -64px;
+}
+
+.flag.flag-tn {
+    background-position: -32px -96px;
+}
+
+.flag.flag-ml {
+    background-position: -64px -64px;
+}
+
+.flag.flag-gw {
+    background-position: 0 -64px;
+}
+
+.flag.flag-gh {
+    background-position: -96px -32px;
+}
+
+.flag.flag-tg {
+    background-position: 0 -96px;
+}

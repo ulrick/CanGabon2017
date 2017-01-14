@@ -1,0 +1,52 @@
+<ion-view view-title="Calendrier des matchs" name="dashboard-view">
+  <!--ion-nav-buttons side="right">
+    <button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
+  </ion-nav-buttons>-->
+
+  <ion-content class="match-list">
+
+    <div class="spinner-content" ng-show="loader"><ion-spinner class="spinner-balanced" icon="spiral"></ion-spinner></div>
+
+    <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+    
+    <ion-list>
+        
+        <div ng-repeat ="matchPerDay in matchesToFilter() | filter:filterMatches" class="card">
+          <div class="item item-divider">
+            {{ matchPerDay.dateDay }}
+            <span class="badge" ng-class="{'badge-positive': getTeamPoule(matchPerDay) == 'A', 
+                                                    'badge-energized': getTeamPoule(matchPerDay) == 'B', 
+                                                    'badge-balanced': getTeamPoule(matchPerDay) == 'C', 
+                                                    'badge-assertive': getTeamPoule(matchPerDay) == 'D' }">{{matchPerDay.group}}</span>
+            
+          </div>
+          
+          <div ng-repeat="match in matches | filter:{dateDay: matchPerDay.dateDay}" class="item item-text-wrap">
+            <div class="row">
+              <div class="col col-80">
+                <div class="row calendrier">
+                  <div class="col col-40 match-info left">
+                    <p class="center"><i class="flag {{match.team1Icon}}"></i></p>
+                    <p><span class="team-name">{{match.team1}}</span></p>
+                  </div>
+                  <div class="col col-20 match-info center">
+                      <span><b>{{match.scoreTeam1}}</b></span> - <span><b>{{match.scoreTeam2}}</b></span>
+                  </div>
+                  <div class="col col-40 match-info right">
+                    <p class="center"><i class="flag {{match.team2Icon}}"></i></p>
+                    <p class="center"><span class="team-name">{{match.team2}}</span></p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col col-10 col-offset-10">
+                <span class="item-note">
+                  {{match.dateHour}}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
